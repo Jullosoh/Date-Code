@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une petite question ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Coeurs -->
+    <div class="hearts"></div>
+
+    <!-- PAGE 1 -->
+    <section id="page1" class="page">
+
+        <div class="card">
+
+            <h1>😊 Salut !</h1>
+
+            <img class="gif"
+                src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+
+            <h2 id="question">
+                J'ai une petite question...
+            </h2>
+
+            <p class="subtitle">
+                Est-ce que tu accepterais d'aller au cinéma avec moi ? 🍿❤️
+            </p>
+
+            <div class="buttons">
+
+                <button id="yesBtn">
+                    ❤️ Oui
+                </button>
+
+                <button id="noBtn">
+                    🙈 Non
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 2 -->
+    <section id="page2" class="page hidden">
+
+        <div class="card">
+
+            <h1>🥳 Génial !!</h1>
+
+            <p>
+                Organisons notre sortie 😊
+            </p>
+
+            <label>Date</label>
+
+            <input
+                id="date"
+                type="date">
+
+            <label>Heure</label>
+
+            <input
+                id="heure"
+                type="time">
+
+            <label>Film</label>
+
+            <select id="film">
+
+                <option>Deadpool</option>
+                <option>Mission Impossible</option>
+                <option>Avatar</option>
+                <option>Jurassic World</option>
+                <option>Peu importe 😊</option>
+
+            </select>
+
+            <label>Lieu</label>
+
+            <input
+                id="lieu"
+                type="text"
+                placeholder="Ex : Pathé Dakar">
+
+            <button id="continueBtn">
+
+                Continuer ➜
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 3 -->
+    <section id="page3" class="page hidden">
+
+        <div class="card">
+
+            <h1>🎉 Notre rendez-vous</h1>
+
+            <div class="resume">
+
+                <p>
+                    📅 <strong>Date :</strong>
+
+                    <span id="rDate"></span>
+                </p>
+
+                <p>
+                    🕒 <strong>Heure :</strong>
+
+                    <span id="rHeure"></span>
+                </p>
+
+                <p>
+                    🎬 <strong>Film :</strong>
+
+                    <span id="rFilm"></span>
+                </p>
+
+                <p>
+                    📍 <strong>Lieu :</strong>
+
+                    <span id="rLieu"></span>
+                </p>
+
+            </div>
+
+            <div class="message">
+
+                <h2>❤️ Merci ❤️</h2>
+
+                <p>
+
+                    Merci d'avoir accepté cette invitation.
+
+                </p>
+
+                <p>
+
+                    J'espère qu'on passera un très bon moment ensemble.
+
+                </p>
+
+                <p>
+
+                    Le film sera sûrement génial...
+
+                </p>
+
+                <p>
+
+                    Mais ce qui compte le plus,
+                    c'est le temps qu'on partagera ensemble. 😊
+
+                </p>
+
+                <p>
+
+                    J'ai vraiment hâte de cette sortie 🍿❤️
+
+                </p>
+
+            </div>
+
+            <button id="finish">
+
+                🥰 À bientôt
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 4 -->
+    <section id="page4" class="page hidden">
+
+        <div class="card final">
+
+            <h1>🥳 Rendez-vous confirmé !</h1>
+
+            <h2>❤️ Merci ❤️</h2>
+
+            <p>
+
+                N'oublie pas notre sortie !
+
+            </p>
+
+            <p>
+
+                Passe une excellente journée 😊
+
+            </p>
+
+            <div class="bigHeart">
+
+                ❤️
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#ffd6e7,#ffe9f3);
+
+    overflow:hidden;
+
+    height:100vh;
+
+}
+
+/**********************/
+/* Pages */
+/**********************/
+
+.page{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    animation:fade .6s;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+/**********************/
+/* Carte */
+/**********************/
+
+.card{
+
+    width:520px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card h1{
+
+    color:#ff4f88;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    margin-top:15px;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+}
+
+.gif{
+
+    width:230px;
+
+    border-radius:20px;
+
+}
+
+/**********************/
+/* Boutons */
+/**********************/
+
+.buttons{
+
+    position:relative;
+
+    height:90px;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:15px 35px;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+#yesBtn{
+
+    background:#4CAF50;
+
+    color:white;
+
+    margin-right:20px;
+
+}
+
+#yesBtn:hover{
+
+    transform:scale(1.08);
+
+}
+
+#noBtn{
+
+    position:absolute;
+
+    background:#ff4d6d;
+
+    color:white;
+
+}
+
+/**********************/
+/* Formulaire */
+/**********************/
+
+label{
+
+    display:block;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    text-align:left;
+
+}
+
+input,select{
+
+    width:100%;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+#continueBtn{
+
+    margin-top:30px;
+
+    width:100%;
+
+    background:#ff4d6d;
+
+    color:white;
+
+}
+
+/**********************/
+/* Résumé */
+/**********************/
+
+.resume{
+
+    text-align:left;
+
+    margin-top:20px;
+
+    margin-bottom:25px;
+
+}
+
+.resume p{
+
+    margin:12px 0;
+
+    font-size:18px;
+
+}
+
+.message{
+
+    background:#fff5fa;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+}
+
+#finish{
+
+    margin-top:25px;
+
+    width:100%;
+
+    background:#4CAF50;
+
+    color:white;
+
+}
+
+/**********************/
+/* Dernière page */
+/**********************/
+
+.final{
+
+    animation:pulse 2s infinite;
+
+}
+
+.bigHeart{
+
+    font-size:80px;
+
+    margin-top:20px;
+
+    animation:heart 1s infinite;
+
+}
+
+@keyframes heart{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.02);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/**********************/
+/* Coeurs qui tombent */
+/**********************/
+
+.hearts{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.hearts::before{
+
+    content:"❤️ ❤️ 💕 💖 💗 💘 💝 ❤️ 💕";
+
+    position:absolute;
+
+    left:-20%;
+
+    font-size:32px;
+
+    width:140%;
+
+    animation:fall 18s linear infinite;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-120%);
+
+    }
+
+    to{
+
+        transform:translateY(120vh);
+
+    }
+
+}
