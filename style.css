@@ -1,29 +1,39 @@
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
+
 }
+
+
 
 body{
 
     background:linear-gradient(135deg,#ffd6e7,#ffe9f3);
 
-    overflow:hidden;
+    min-height:100vh;
 
-    height:100vh;
+    overflow:hidden;
 
 }
 
-/**********************/
-/* Pages */
-/**********************/
+
+
+
+
+/* ==========================
+        PAGES
+========================== */
+
 
 .page{
 
     position:absolute;
 
     width:100%;
+
     height:100%;
 
     display:flex;
@@ -36,11 +46,15 @@ body{
 
 }
 
+
+
 .hidden{
 
     display:none;
 
 }
+
+
 
 @keyframes fade{
 
@@ -51,6 +65,7 @@ body{
 
     }
 
+
     to{
 
         opacity:1;
@@ -60,25 +75,45 @@ body{
 
 }
 
-/**********************/
-/* Carte */
-/**********************/
+
+
+
+
+
+
+/* ==========================
+        CARTE
+========================== */
+
 
 .card{
 
-    width:520px;
+
+    width:90%;
+
+    max-width:520px;
+
 
     background:white;
 
+
     border-radius:25px;
 
-    padding:35px;
+
+    padding:35px 25px;
+
 
     text-align:center;
 
+
     box-shadow:0 20px 40px rgba(0,0,0,.15);
 
+
 }
+
+
+
+
 
 .card h1{
 
@@ -87,6 +122,18 @@ body{
     margin-bottom:15px;
 
 }
+
+
+
+.card h2{
+
+    color:#444;
+
+}
+
+
+
+
 
 .subtitle{
 
@@ -98,187 +145,325 @@ body{
 
 }
 
+
+
+
 .gif{
 
     width:230px;
+
+    max-width:80%;
 
     border-radius:20px;
 
 }
 
-/**********************/
-/* Boutons */
-/**********************/
+
+
+
+
+
+/* ==========================
+        BOUTONS
+========================== */
+
 
 .buttons{
 
+
     position:relative;
 
-    height:90px;
+    height:100px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
 
 }
+
+
 
 button{
 
+
     cursor:pointer;
+
 
     border:none;
 
+
     border-radius:50px;
+
 
     padding:15px 35px;
 
+
     font-size:20px;
+
 
     transition:.3s;
 
+
+    touch-action:manipulation;
+
+
 }
+
+
+
 
 #yesBtn{
 
+
     background:#4CAF50;
 
     color:white;
 
-    margin-right:20px;
 
 }
+
+
 
 #yesBtn:hover{
 
+
     transform:scale(1.08);
 
+
 }
+
+
+
+
 
 #noBtn{
 
-    position:absolute;
 
     background:#ff4d6d;
 
     color:white;
 
+
+    position:absolute;
+
+
 }
 
-/**********************/
-/* Formulaire */
-/**********************/
+
+
+
+
+
+
+/* ==========================
+        FORMULAIRE
+========================== */
+
 
 label{
 
+
     display:block;
 
+
     margin-top:20px;
+
 
     margin-bottom:8px;
 
+
     font-weight:600;
+
 
     text-align:left;
 
+
 }
 
-input,select{
+
+
+
+input,
+select{
+
 
     width:100%;
+
 
     padding:13px;
 
+
     border-radius:10px;
+
 
     border:1px solid #ccc;
 
+
     font-size:16px;
 
+
+    background:white;
+
+
 }
+
+
+
 
 #continueBtn{
 
+
     margin-top:30px;
 
+
     width:100%;
+
 
     background:#ff4d6d;
 
+
     color:white;
+
 
 }
 
-/**********************/
-/* Résumé */
-/**********************/
+
+
+
+
+
+/* ==========================
+        RESUME
+========================== */
+
 
 .resume{
 
+
     text-align:left;
 
+
     margin-top:20px;
+
 
     margin-bottom:25px;
 
+
 }
+
+
+
 
 .resume p{
 
+
     margin:12px 0;
+
 
     font-size:18px;
 
+
 }
+
+
+
+
 
 .message{
 
+
     background:#fff5fa;
+
 
     padding:20px;
 
+
     border-radius:15px;
 
+
     margin-top:20px;
+
 
     line-height:1.8;
 
+
 }
+
+
+
+
 
 #finish{
 
+
     margin-top:25px;
+
 
     width:100%;
 
+
     background:#4CAF50;
+
 
     color:white;
 
+
 }
 
-/**********************/
-/* Dernière page */
-/**********************/
+
+
+
+
+
+
+
+/* ==========================
+        DERNIERE PAGE
+========================== */
+
 
 .final{
 
+
     animation:pulse 2s infinite;
 
+
 }
+
+
 
 .bigHeart{
 
+
     font-size:80px;
+
 
     margin-top:20px;
 
+
     animation:heart 1s infinite;
+
 
 }
 
+
+
+
 @keyframes heart{
+
 
     0%{
 
         transform:scale(1);
 
     }
+
 
     50%{
 
@@ -286,6 +471,7 @@ input,select{
 
     }
 
+
     100%{
 
         transform:scale(1);
@@ -294,7 +480,11 @@ input,select{
 
 }
 
+
+
+
 @keyframes pulse{
+
 
     0%{
 
@@ -302,11 +492,13 @@ input,select{
 
     }
 
+
     50%{
 
         transform:scale(1.02);
 
     }
+
 
     100%{
 
@@ -316,52 +508,258 @@ input,select{
 
 }
 
-/**********************/
-/* Coeurs qui tombent */
-/**********************/
+
+
+
+
+
+
+
+/* ==========================
+        COEURS
+========================== */
+
 
 .hearts{
 
+
     position:fixed;
+
 
     width:100%;
 
+
     height:100%;
 
+
     pointer-events:none;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.hearts::before{
+
+
+    content:"❤️ ❤️ 💕 💖 💗 💘 💝 ❤️ 💕";
+
+
+    position:absolute;
+
+
+    left:-20%;
+
+
+    font-size:32px;
+
+
+    width:140%;
+
+
+    animation:fall 18s linear infinite;
+
+
+}
+
+
+
+
+
+@keyframes fall{
+
+
+    from{
+
+
+        transform:translateY(-120%);
+
+
+    }
+
+
+    to{
+
+
+        transform:translateY(120vh);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        MOBILE
+========================== */
+
+
+@media(max-width:600px){
+
+
+
+body{
 
     overflow:hidden;
 
 }
 
-.hearts::before{
 
-    content:"❤️ ❤️ 💕 💖 💗 💘 💝 ❤️ 💕";
 
-    position:absolute;
 
-    left:-20%;
+.page{
 
-    font-size:32px;
 
-    width:140%;
-
-    animation:fall 18s linear infinite;
+    padding:15px;
 
 }
 
-@keyframes fall{
 
-    from{
 
-        transform:translateY(-120%);
 
-    }
 
-    to{
+.card{
 
-        transform:translateY(120vh);
 
-    }
+    width:95%;
+
+
+    padding:25px 18px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+.card h1{
+
+
+    font-size:26px;
+
+
+}
+
+
+
+.card h2{
+
+
+    font-size:19px;
+
+
+}
+
+
+
+.subtitle{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+.gif{
+
+
+    width:170px;
+
+
+}
+
+
+
+
+
+.buttons{
+
+
+    height:120px;
+
+
+}
+
+
+
+
+button{
+
+
+    font-size:17px;
+
+
+    padding:13px 25px;
+
+
+}
+
+
+
+
+input,
+select{
+
+
+    padding:12px;
+
+
+}
+
+
+
+
+.resume p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.message{
+
+
+    font-size:14px;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+.bigHeart{
+
+
+    font-size:60px;
+
+
+}
+
+
 
 }
